@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz Pokémon — Geração 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Quiz Pokémon — 1ª Geração</h1>
+    <div class="controls">
+      <label for="generation" class="gen-label">Geração</label>
+      <select id="generation" aria-label="Selecionar geração">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+      <button id="novo">Novo Pokémon</button>
+      <div class="autocomplete">
+        <input id="guess" placeholder="Digite o nome (inglês) e pressione Enter" autocomplete="off" />
+        <div id="suggestions" class="suggestions" hidden></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="poke-card">
+        <div class="poke-image">
+          <img id="poke-img" src="" alt="" />
+        </div>
+        <div class="poke-name" id="poke-name">?</div>
+      </div>
+      <div class="attributes">
+        <div class="row"><div class="label">Tipo 1</div><div id="tipo1" class="cell">?</div></div>
+        <div class="row"><div class="label">Tipo 2</div><div id="tipo2" class="cell">?</div></div>
+        <div class="row"><div class="label">Habitat</div><div id="habitat" class="cell">?</div></div>
+        <div class="row"><div class="label">Cor</div><div id="cor" class="cell">?</div></div>
+        <div class="row"><div class="label">Fase de evolução</div><div id="fase" class="cell">?</div></div>
+        <div class="row"><div class="label">Altura</div><div id="altura" class="cell">?</div></div>
+        <div class="row"><div class="label">Peso</div><div id="peso" class="cell">?</div></div>
+      </div>
+    </div>
+    <div id="log" class="log"></div>
+    <div id="history" class="history"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
