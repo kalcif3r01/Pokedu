@@ -1,4 +1,4 @@
-# Quiz Pokémon — Geração 1
+# pokeduRabo.com — Quiz Pokémon — Geração 1
 
 Pequeno web app que implementa um quiz estilo "Pokedle" (modo clássico) usando a PokeAPI.
 
@@ -44,11 +44,11 @@ Notas finais
   - Configurar deploy automático com outras opções (Netlify/Vercel).
   - Adicionar um arquivo JSON local com nomes/traduções para funcionar 100% offline.
 
-Domínio customizado (opcional)
+Domicínio customizado (opcional)
 
-Se você quer que o site seja acessível em "pokedu.com", siga estes passos básicos:
+Se você quer que o site seja acessível em "pokeduRabo.com", siga estes passos básicos:
 
-- Adicione o arquivo `CNAME` na raiz do repositório (já criado aqui com `pokedu.com`).
+- Adicione o arquivo `CNAME` na raiz do repositório (já criado aqui com `pokeduRabo.com`).
 
 - Configure o DNS do seu domínio:
   - Para GitHub Pages (usando branch `gh-pages` ou `main` conforme sua configuração):
@@ -59,17 +59,17 @@ Se você quer que o site seja acessível em "pokedu.com", siga estes passos bás
 - No GitHub: vá em Settings → Pages e verifique se o domínio customizado está configurado (o workflow já publica os arquivos; GitHub reconhecerá o `CNAME`). Habilite HTTPS quando disponível.
 
 Observações técnicas
-- O arquivo `CNAME` na raiz do repositório instrui o GitHub Pages a responder por esse domínio. Já o DNS é responsabilidade do provedor onde você registrou `pokedu.com`.
+- O arquivo `CNAME` na raiz do repositório instrui o GitHub Pages a responder por esse domínio. Já o DNS é responsabilidade do provedor onde você registrou `pokeduRabo.com`.
 - Se preferir, eu posso:
   - Gerar os registros DNS exatos para o seu provedor (informe qual é),
   - Fazer o commit e push para o repositório e testar o deploy, ou
-  - Ajudar a configurar o redirecionamento `pokedu.com` → `www.pokedu.com` conforme sua preferência.
+  - Ajudar a configurar o redirecionamento `pokeduRabo.com` → `www.pokeduRabo.com` conforme sua preferência.
 
 **Publicar no GitHub (passo a passo)**
 
 Siga estes passos para publicar o site no GitHub Pages a partir da `main`:
 
-1. Crie um repositório no GitHub (por exemplo `pokedu`).
+1. Crie um repositório no GitHub (por exemplo `pokeduRabo`).
 
 2. No seu projeto local, inicialize o repositório Git (se ainda não tiver):
 
@@ -89,13 +89,13 @@ git push -u origin main
 
 4. O workflow `/.github/workflows/gh-pages.yml` já incluído publicará o conteúdo da raiz para o GitHub Pages sempre que você fizer push na `main`. Verifique a aba **Actions** no GitHub para acompanhar o job.
 
-5. Se você deseja um domínio customizado (por exemplo `pokedu.com`):
+5. Se você deseja um domínio customizado (por exemplo `pokeduRabo.com`):
 
-  - Garanta que o arquivo `CNAME` contenha `pokedu.com` na raiz do repositório (já presente aqui).
+  - Garanta que o arquivo `CNAME` contenha `pokeduRabo.com` na raiz do repositório (já presente aqui).
   - Configure o DNS no seu registrador: adicione os registros A do GitHub Pages ou um registro CNAME para `www` apontando para `<seu-usuario>.github.io`.
   - No repositório GitHub vá em Settings → Pages e verifique o domínio customizado. Habilite HTTPS quando aparecer a opção.
 
-6. Aguarde: após o workflow e a configuração DNS, o site deverá ficar disponível em `https://<seu-usuario>.github.io/<seu-repo>/` ou em `https://pokedu.com` após a propagação DNS.
+6. Aguarde: após o workflow e a configuração DNS, o site deverá ficar disponível em `https://<seu-usuario>.github.io/<seu-repo>/` ou em `https://pokeduRabo.com` após a propagação DNS.
 
 Dicas de resolução de problemas
 
